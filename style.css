@@ -1,0 +1,233 @@
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* ### Primary
+
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%)
+ */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 86%);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 10px 10px 50px 10px;
+  margin: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(0, 1%, 44%);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.calculator_inputs_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator_inputs_container > label {
+  font-size: 10px;
+}
+
+.calculator_inputs {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+.divisor_img {
+  color: hsl(259, 100%, 65%);
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  padding: 10px;
+  width: 30px;
+}
+
+.inputs {
+  border: 1px solid hsl(0, 0%, 86%);
+  width: 70px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: black;
+  font-weight: bold;
+}
+
+
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: hsl(0, 1%, 44%);
+  font-weight: bold;
+}
+
+.divisor {
+
+}
+
+.divisor_img {
+  float: right;
+
+}
+
+.calculator_info {
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: lowercase;
+  line-height: 0.01;
+}
+.calculator_info > p:first-child {
+  color: hsl(259, 100%, 65%);
+  font-size: 40px;
+  line-height: 0.01;
+}
+.input_error {
+  font-weight: 300;
+  color: red;
+  display: none;
+}
+
+.calculator_info_years {
+  margin-left: 10px;
+}
+.calculator_info_months {
+  margin-left: 10px;
+}
+.calculator_info_days {
+  margin-left: 10px;
+}

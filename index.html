@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div class="calculator">
+          <div class="calculator_inputs">
+            <div class="calculator_inputs_container">
+              <label for="input_day">Day</label>
+              <input
+                pattern="([0-2]\d|3[0-1])"
+                onchange="handleInput()"
+                size="2"
+                maxlength="2"
+                pattern="^([1-9]|[12][0-9]|3[01])$"
+                class="inputs"
+                id="input_day"
+                placeholder="DD"
+              />
+              <label id="error_day" class="input_error">Must be a valid day</label>
+            </div>
+            <div class="calculator_inputs_container">
+              <label for="input_month">Month</label>
+              <input
+                onchange="handleInput()"
+                size="2"
+                maxlength="2"
+                pattern="^([1-9]|[12][0-9]|3[01])$"
+                class="inputs"
+                id="input_month"
+                placeholder="MM"
+              />
+              <label id="error_month" class="input_error">Must be a valid mont</label>
+            </div>
+            <div class="calculator_inputs_container">
+              <label for="input_year">Year</label>
+              <input
+                onchange="handleInput()"
+                class="inputs"
+                id="input_year"
+                placeholder="YYYY"
+              />
+              <label id="error_year" class="input_error">Must be a valid year</label>
+            </div>
+          </div>
+          <div class="divisor">
+            <hr >
+            <div>
+
+            </div>
+            <img
+              src="./assets/images/icon-arrow.svg"
+              class="divisor_img"
+              alt="logo"
+            />
+          </div>
+          <div>
+            <div class="calculator_info">
+              <p id="year_diff">- -</p>
+              <p class="calculator_info_years">years</p>
+            </div>
+            <div class="calculator_info">
+              <p id="month_diff">- -</p>
+              <p class="calculator_info_months">months</p>
+            </div>
+            <div class="calculator_info">
+              <p id="date_diff">- -</p>
+              <p class="calculator_info_days">days</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
